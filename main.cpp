@@ -4,10 +4,10 @@
 
 int main(int agrc, char **agrv )
 {
-    FILE *fp1, *fp2;                              // five-hundred.bin
+    FILE *fp1, *fp2;                            
     fp1 = fopen("thousand.bin", "rb");      // LOAD thousand.bin
     fp2 = fopen("five-hundred.bin","rb");    // LOAD five-hundred.bin
-//    int i_a1,i_a2,i_sum =0;
+    
     uint32_t a1,a2,b1,b2,sum;
 
     fread(&a1,sizeof(int),4,fp1);
